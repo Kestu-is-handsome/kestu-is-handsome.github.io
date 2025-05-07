@@ -5,33 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tenzing Kesang | Digital Marketer</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
       color: #333;
-      background: #f9f9f9;
+      background: #fefefe;
+      scroll-behavior: smooth;
     }
     header {
-      background: #111;
+      background: linear-gradient(to right, #2e2e2e, #1a1a1a);
       color: #fff;
-      padding: 2rem;
+      padding: 3rem 2rem;
       text-align: center;
+      position: relative;
+    }
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+      margin-top: 1rem;
     }
     nav {
-      margin-top: 1rem;
+      margin-top: 1.5rem;
     }
     nav a {
       color: #ddd;
       margin: 0 1rem;
       text-decoration: none;
       font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #fff;
     }
     section {
-      padding: 2rem;
+      padding: 3rem 2rem;
       max-width: 900px;
       margin: auto;
+      animation: fadeIn 1s ease-in;
     }
     h2 {
       border-bottom: 2px solid #ccc;
@@ -42,17 +58,40 @@
     }
     .card {
       background: white;
-      padding: 1rem;
-      margin-bottom: 1rem;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1.5rem;
       border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    ul {
+      line-height: 1.8;
     }
     footer {
-      background: #111;
+      background: #1a1a1a;
       color: #fff;
       text-align: center;
-      padding: 1rem;
+      padding: 1.5rem;
       margin-top: 2rem;
+    }
+    .contact a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    .contact p {
+      font-size: 1.1rem;
+      margin: 0.8rem 0;
+    }
+    .icon {
+      margin-right: 10px;
+      color: #555;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -60,6 +99,7 @@
   <header>
     <h1>Tenzing Kesang</h1>
     <p>Growth Marketer | Data Learner | Digital Explorer</p>
+    <img src="https://media.licdn.com/dms/image/D4D03AQEKnEySnjPY9g/profile-displayphoto-shrink_800_800/0/1704539391310?e=1720051200&v=beta&t=n6O0fUOyH9sP3XPz7zTCn2cHSk3_9u7V_d6khG7qHFM" alt="Tenzing Kesang">
     <nav>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
@@ -106,8 +146,9 @@
 
   <section id="contact" class="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:bhutiat269@gmail.com">bhutiat269@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/tenzing-bhutia-616831241/" target="_blank">linkedin.com/in/tenzing-bhutia</a></p>
+    <p><i class="fas fa-envelope icon"></i>Email: <a href="mailto:bhutiat269@gmail.com">bhutiat269@gmail.com</a></p>
+    <p><i class="fab fa-linkedin icon"></i>LinkedIn: <a href="https://www.linkedin.com/in/tenzing-bhutia-616831241/" target="_blank">linkedin.com/in/tenzing-bhutia</a></p>
+    <p><i class="fas fa-phone icon"></i>Phone: <a href="tel:+916297172667">+91 62971 72667</a></p>
   </section>
 
   <footer>
@@ -115,3 +156,4 @@
   </footer>
 </body>
 </html>
+
